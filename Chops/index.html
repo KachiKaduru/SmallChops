@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Small Chops</title>
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+           <h1 class="logo"><a href="#">Chops!</a></h1>
+
+           <img src="menu.svg" alt="menu" class="mobile-menu" id="menuMobile">
+
+            <nav>
+                <img src="exit.svg" alt="exit" class="mobile-exit" id="exitMobile">
+
+                <ul>
+                    <li> <a href="#">Home</a></li>
+                    <li> <a href="#">Menu</a></li>
+                    <li> <a href="#">About Us</a></li>
+                    <li> <a href="#">Contact Us</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero"> 
+        <div class="container">
+            <div class="left-column">
+                <img src="Standard-Tray-compressor.png" alt="food">
+            </div>
+
+            <div class="right-column">
+                <h1>Small chops the way you like it!</h1>
+
+                <p>Everyday is a good day for small chops. Order our everyday pack and get moving. Better yet, make it two!</p>
+
+                <div class="order">
+                    <a href="#"> Order Now</a>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>Chops 2021</p>
+    </footer>
+
+    <script>
+        
+        const mobileBtn = document.getElementById('menuMobile')
+        const nav = document.querySelector('nav')
+        const mobileBtnExit = document.getElementById('exitMobile');
+        
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+</body>
+</html>

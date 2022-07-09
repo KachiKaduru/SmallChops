@@ -212,6 +212,7 @@ footer p {
     width: 90%;
     display: block;
     margin: auto;
+    margin-left: -15em;
     margin-top: 2em;
   }
   .hero .right-column h1 {

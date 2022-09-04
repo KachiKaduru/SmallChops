@@ -6,13 +6,12 @@
 body {
   background-color: whitesmoke;
   margin: 0;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   width: auto;
 }
 
 * {
-  -webkit-transition: .3s;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 a {
@@ -24,60 +23,46 @@ a {
   background-color: var(--primary-color);
   padding: 1px;
   height: 70px;
-  -webkit-box-shadow: 0px 5px 30px rgba(191, 191, 191, 0.25);
-          box-shadow: 0px 5px 30px rgba(191, 191, 191, 0.25);
+  box-shadow: 0px 5px 30px rgba(191, 191, 191, 0.25);
 }
-
 .header .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: auto;
   position: relative;
 }
-
 .header .logo {
-  margin: .3em;
+  margin: 0.3em;
   padding-left: 1em;
   font-weight: 700;
 }
-
 .header .mobile-menu {
   width: 35px;
   padding: 1em;
-  -webkit-filter: invert(1);
-          filter: invert(1);
+  filter: invert(1);
   cursor: pointer;
 }
-
 .header nav {
   display: none;
 }
-
 .header nav.menu-btn {
   display: block;
 }
-
 .header nav {
   background: var(--primary-color);
-  opacity: .95;
+  opacity: 0.95;
   position: absolute;
   right: 0;
   height: 100vh;
   width: 35%;
   z-index: 999;
 }
-
 .header nav .mobile-exit {
   float: right;
   width: 30px;
   padding: 1em;
   cursor: pointer;
 }
-
 .header nav ul {
   list-style-type: none;
   margin-top: 6em;
@@ -85,12 +70,10 @@ a {
   margin-left: -2em;
   text-align: left;
 }
-
 .header nav ul li {
   margin: 1em;
   margin-bottom: 2em;
 }
-
 .header nav ul li a:hover {
   color: white;
   font-weight: 700;
@@ -100,34 +83,27 @@ a {
 .hero {
   position: relative;
 }
-
 .hero img {
   margin-top: 2em;
-  -webkit-transform: rotate(8deg);
-          transform: rotate(8deg);
+  transform: rotate(8deg);
   position: relative;
   left: 5px;
   display: block;
   width: 95%;
 }
-
 .hero .right-column {
   text-align: center;
 }
-
 .hero .right-column h1 {
   margin: auto;
   font-size: 40px;
 }
-
 .hero .right-column p {
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0 .5em;
+  box-sizing: border-box;
+  padding: 0 0.5em;
   font-size: 16px;
 }
-
 .hero .order {
   background-color: var(--primary-color);
   width: -webkit-fit-content;
@@ -140,11 +116,9 @@ a {
   border-radius: 10px;
   font-weight: 500;
 }
-
 .hero .order:hover {
   background-color: white;
 }
-
 .hero .order:hover a {
   color: var(--primary-color);
 }
@@ -157,7 +131,6 @@ footer {
   height: 60px;
   margin: 2em auto 0;
 }
-
 footer p {
   line-height: 60px;
   text-align: center;
@@ -168,13 +141,9 @@ footer p {
     height: 100px;
   }
   .header .container {
-    display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 180px auto;
-        grid-template-columns: 180px auto;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    grid-template-columns: 180px auto;
+    justify-content: space-between;
   }
   .header .mobile-exit, .header .mobile-menu {
     display: none;
@@ -183,12 +152,8 @@ footer p {
     line-height: 75px;
   }
   .header nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     background: none;
     position: unset;
     height: auto;
@@ -197,8 +162,6 @@ footer p {
     padding: 0;
   }
   .header nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .header nav a {
@@ -234,7 +197,6 @@ footer p {
     font-size: 18px;
   }
 }
-
 @media only screen and (min-width: 1080px) {
   .header nav a {
     font-size: 16px;
@@ -244,12 +206,8 @@ footer p {
     position: relative;
   }
   .hero .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .hero .left-column {
     width: 50%;
@@ -276,4 +234,3 @@ footer p {
     margin: 2em 0;
   }
 }
-/*# sourceMappingURL=main.css.map */
